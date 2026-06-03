@@ -1,7 +1,7 @@
 CXX      ?= g++
 CXXFLAGS ?= -Wall -Wextra -std=c++17
 TARGET    = perm
-SRC       = perm.c
+SRC       = perm.cpp
 
 .PHONY: all clean test
 

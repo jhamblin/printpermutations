@@ -9,7 +9,7 @@ It uses a recursive in-place swap algorithm to generate all n! orderings without
 make
 ```
 
-Compiles `perm.c` (C++ despite the `.c` extension) into an executable called `perm`.
+Compiles `perm.cpp` into an executable called `perm`.
 
 ## Usage
 
