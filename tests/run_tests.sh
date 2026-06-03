@@ -83,6 +83,15 @@ assert_all_anagrams() {
 echo "Running tests..."
 echo
 
+# No arguments - should print usage and exit non-zero
+"$PERM" 2>/dev/null && {
+    FAIL=$((FAIL + 1))
+    echo "  FAIL  no args exits non-zero"
+} || {
+    PASS=$((PASS + 1))
+    echo "  PASS  no args exits non-zero"
+}
+
 # Empty string
 assert_output "empty string produces one empty line" "" ""
 
